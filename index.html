@@ -1,8 +1,11 @@
 <html>
 <head>
 <title> 3G</title>
-<font color="red" size="20">Szkielet zaliczeniowy JavaScript Kamil Klimko klasa 3G grupa 1
+<font color="Black" size="20">Szkielet zaliczeniowy JavaScript Kamil Klimko klasa 3G grupa 1
 <script language="JavaScript">
+    
+
+    
 function WinOpen_z1()
 {
 window.open("z1_klim.html","okienko_z1","toolbar=no,directories=no,menubar=no,height=580,width=500,top=200,left=200");
@@ -177,6 +180,22 @@ window.close()
 
 
     <input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+
+    <script>
+function zmien(f) {
+  document.bgColor=f.kolory[f.kolory.selectedIndex].value;
+}
+</script>
+
+<form>
+  <select name="kolory" onchange="zmien(this.form)">
+    <option value="white">biały</option>
+    <option value="magenta">magenta</option>
+    <option value="green">zielony</option>
+    <option value="gray">szary</option>
+    <option value="rgb(10,67,99)">inny</option>
+  </select>
+</form>
 </form>
 </body>
 </html>
