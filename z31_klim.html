@@ -1,0 +1,24 @@
+﻿<html>
+<head>
+<script type="text/javascript">
+var mebel = {
+  wysokosc: '100cm',
+  szerokosc: '80cm',
+  z_czego_wykonane: 'drewno',
+  pokaz: function () {
+    document.write(this.wysokosc + 'x' + this.szerokosc + ' ' + this.z_czego_wykonane);
+  }
+};
+mebel.pokaz();
+mebel.rodzaj = 'szafka';
+mebel.wypisz = function() {
+  alert('Rodzaj: ' + this.rodzaj);
+};
+mebel.wypisz();
+</script>
+</head>
+<body>
+<br>
+Programowanie obiektowe- Kamil Klimko 3G grupa 1
+</body>
+</html>
