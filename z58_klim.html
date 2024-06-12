@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head> 
+ <meta charset="utf-8">
+ <title> wlasnosci liczb Kamil Klimko 3G </title>
+</head>
+<body>
+<div>
+ <script language="JavaScript">
+var x_klim=prompt("Podaj pierwszą liczbę=","");
+var liczba1_klim=parseInt(x_klim);
+var y_klim=prompt("Podaj drugą liczbę=","");
+var liczba2_klim=parseInt(y_klim);
+if(liczba1_klim < liczba2_klim){
+  document.write("<p style=\"font-size:50px; color: purple;\">Liczby nieparzyste od "+liczba1_klim+" do "+liczba2_klim+":<br>");
+  for(var i_klim=liczba1_klim;i_klim<=liczba2_klim;i_klim++){
+    if(i_klim%2==1){
+      document.write(i_klim+"<br>");
+    }
+  }
+}
+if(liczba1_klim > liczba2_klim){
+  document.write("<p style=\"font-size:25px; color: yellow;\">Liczby nieparzyste od "+liczba1_klim+" do "+liczba2_klim+":<br>");
+  for(var i_klim=liczba1_klim;i_klim>=liczba2_klim;i_klim--){
+    if(i_klim%2==1){
+      document.write(i_klim+"<br>");
+    }
+  }
+}
+if(liczba1_klim==liczba2_klim){
+  confirm("Brak obliczeń");
+  document.write("Uruchom zadanie ponownie");
+}
+ </script>
+</div>
+</body> 
+</html>
