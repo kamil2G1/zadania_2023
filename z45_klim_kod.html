@@ -1,0 +1,30 @@
+<TD><br><b>Kod klimko:</b><br> <textarea cols="60" rows="20">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kamil Klimko 3G</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <div style="color:pink; font-size:50px;">
+    <script language="JavaScript">
+      var wczytanaLiczba = prompt("Podaj liczbę:");
+      var ile_razy_wyświetlić_klim = 15;
+      var wielkość_liter_klim = 50;
+      document.write("Ilość wykonania pętli = " + ile_razy_wyświetlić_klim + "<br>");  
+      document.write("Wielkość liter = " + wielkość_liter_klim + "px" + "<br>");
+      if (wczytanaLiczba % 2 === 0) {
+        for (i_klim = 0; i_klim < ile_razy_wyświetlić_klim; i_klim++) {
+          document.write('<font color="purple" style="font-size: ' + wielkość_liter_klim + 'px;">Klimko</font><br>');
+        }
+      } else {
+        for (i = 0; i < ile_razy_wyświetlić_klim; i++) {
+          document.write('<font color="yellow" style="font-size: ' + wielkość_liter_klim + 'px;">Kamil</font><br>');
+        }
+      }
+    </script>
+  </div>
+</body>
+</html>
+</textarea>
+</TD>

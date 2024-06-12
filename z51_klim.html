@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head> 
+ <meta charset="utf-8">
+ <title> uzycie petli Kamil Klimko 3G</title>
+</head> 
+<body> 
+ <script language="JavaScript">
+document.write('<p style="margin-top: 4cm; color: purple;">Klimko</p>');
+ document.write('<p style="margin-top: 10mm; color: yellow;">Przykładowe użycie pętli.</p>');
+ var n_klim=parseFloat (prompt("Ile razy powtorzyc=",""));
+ var inicjaly_klim=prompt("Podaj swoje inicjaly=","");
+ for ( var i_klim=1; i_klim<=n_klim; i_klim++)
+ {
+ for ( var k_klim=1; k_klim<=i_klim; k_klim++)  
+ {
+ document.write("&nbsp;");  
+ }
+ document.write(i_klim+"_"+inicjaly_klim+"_"+i_klim+"<br>");
+ }
+ </script>
+</body> 
+</html>

@@ -1,0 +1,26 @@
+<TD><br><b>Kod Klimko:</b><br> <textarea cols="60" rows="20">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sprawdzenie Klimko Kamil 3G</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <div style="color:pink;font-size:50px;">
+    <script language="JavaScript">
+      do {
+        var liczba1 = prompt("Podaj wysokosc=", "");
+        var h_klim = parseFloat(liczba1);
+      } while (h_klim <= 0);
+      do {
+        var liczba2 = prompt("Podaj podstawe=", "");
+        var a_klim = parseFloat(liczba2);
+      } while (!(a_klim > 0));
+      var Pole = a_klim * h_klim / 2;
+      document.write("Pole=" + Pole.toFixed(2) + " cm^2" + "<br>");
+    </script>
+  </div>
+</body>
+</html>
+</textarea>
+</TD>

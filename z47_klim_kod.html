@@ -1,0 +1,32 @@
+<TD><br><b>Kod Klimko:</b><br> <textarea cols="60" rows="20">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kamil Klimko 3G</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <div style="color:pink; font-size:50px;">
+    <script language="JavaScript">
+var a_klim, b_klim, c_klim;
+do {
+    a_klim = parseFloat(prompt("Podaj dlugosc boku a:"));
+    b_klim = parseFloat(prompt("Podaj dlugosc boku b:"));
+    c_klim = parseFloat(prompt("Podaj dlugosc boku c:"));
+
+    while (!(a_klim > 0 && b_klim > 0 && c_klim > 0 && a_klim + b_klim > c_klim && a_klim + c_klim > b_klim && c_klim + b_klim > a_klim)) {
+        alert("Podane wartosci nie tworza trojkata. Podaj inne liczby.");
+
+        a_klim = parseFloat(prompt("Podaj dlugosc boku a:"));
+        b_klim = parseFloat(prompt("Podaj dlugosc boku b:"));
+        c_klim = parseFloat(prompt("Podaj dlugosc boku c:"));
+    }
+    document.write("Podane wartosci tworza trojkat.");
+} while (false);
+</script>
+
+  </div>
+</body>
+</html>
+</textarea>
+</TD>
